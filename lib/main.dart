@@ -67,7 +67,7 @@ class RandomWordsState extends State<RandomWords> {
                   onTap:  () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SecondScreen()),
+                      MaterialPageRoute(builder: (context) => Paninis()),
                     );
                   }
                   ,
@@ -91,7 +91,7 @@ class RandomWordsState extends State<RandomWords> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SecondScreen()),
+                      MaterialPageRoute(builder: (context) => Rollos()),
                     );
                   }
                   ,
@@ -114,7 +114,7 @@ class RandomWordsState extends State<RandomWords> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SecondScreen()),
+                      MaterialPageRoute(builder: (context) => Arroz()),
                     );
                   }
                   ,
@@ -147,13 +147,6 @@ class RandomWordsState extends State<RandomWords> {
 
 
 
-  Widget onTapTriangle() {
-
-  }
-
-  Widget onTapRectangle() {
-
-  }
 
 
 
@@ -166,7 +159,7 @@ class RandomWords extends StatefulWidget {
 
 
 
-class SecondScreen extends StatelessWidget {
+class Rollos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -186,7 +179,7 @@ class SecondScreen extends StatelessWidget {
               height: 240.0,
               fit: BoxFit.cover,
             )),
-            
+
             new Text(
                 "Ingredientes",
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0, color: Colors.lightBlue),
@@ -220,6 +213,128 @@ class SecondScreen extends StatelessWidget {
           ],
 
         ),
+        )
+
+
+    );
+  }
+}
+
+class Paninis extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Receta Paninis con mermelada de cebolla "),
+        ),
+        body:
+        new Container(
+          padding: new EdgeInsets.all( 8.0),
+          child:
+          new Column(
+            children: <Widget>[
+              new Container(
+                  padding: new EdgeInsets.all( 8.0),
+                  child:Image.asset(
+                    'assets/panini.jpg',
+                    height: 240.0,
+                    fit: BoxFit.cover,
+                  )),
+
+              new Text(
+                "Ingredientes",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0, color: Colors.lightBlue),
+
+              ),
+              new Text("* 1 1/2 tazas de arroz"),
+              new Text("* 1 zanahoria picada"),
+              new Text("* 1 calabacita picada"),
+              new Text("*1/2 cebolla picada"),
+              new Text("* 1 diente de ajo picado"),
+              new Text(" *1/2 cucharadita de jengibre rallado"),
+              new Text("* 4 cucharadas de cebollín picado"),
+
+
+              new Text("* 2 cucharadas de mirín"),
+              new Text("* 5 cucharadas de salsa de soya"),
+              new Text("* 2 cucharadas de aceite de ajonjolí"),
+              new Text("* 2 cucharadas de aceite vegetal"),
+              new Text(""),
+              new Text(""),
+
+              new Text("Preparación",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0, color: Colors.lightBlue),
+
+              ),
+
+              new Text("1. Enjuaga el arroz en un tazón con agua varias veces hasta que el agua deje de salir turbia, escurre y ponlo en una olla mediana con dos tazas de agua."),
+              new Text("2. Tapa y cuece a fuego alto hasta que comience a hervir, reduce el fuego al mínimo y cuece 13 minutos. Retira del fuego y enfría,"),
+              new Text("3. En un wok saltea las verduras con los aceites; des- pués de algunos minutos agrega el arroz, el mirin y la salsa de soya; cuando esté caliente salpimienta y sirve. "),
+
+            ],
+
+          ),
+        )
+
+
+    );
+  }
+}
+
+class Arroz extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Receta Arroz frito"),
+        ),
+        body:
+        new Container(
+          padding: new EdgeInsets.all( 8.0),
+          child:
+          new Column(
+            children: <Widget>[
+              new Container(
+                  padding: new EdgeInsets.all( 8.0),
+                  child:Image.asset(
+                    'assets/arroz.jpg',
+                    height: 240.0,
+                    fit: BoxFit.cover,
+                  )),
+
+              new Text(
+                "Ingredientes",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0, color: Colors.lightBlue),
+
+              ),
+              new Text("* 1 1/2 tazas de arroz"),
+              new Text("* 1 zanahoria picada"),
+              new Text("* 1 calabacita picada"),
+              new Text("*1/2 cebolla picada"),
+              new Text("* 1 diente de ajo picado"),
+              new Text(" *1/2 cucharadita de jengibre rallado"),
+              new Text("* 4 cucharadas de cebollín picado"),
+
+
+              new Text("* 2 cucharadas de mirín"),
+              new Text("* 5 cucharadas de salsa de soya"),
+              new Text("* 2 cucharadas de aceite de ajonjolí"),
+              new Text("* 2 cucharadas de aceite vegetal"),
+              new Text(""),
+              new Text(""),
+
+              new Text("Preparación",
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 32.0, color: Colors.lightBlue),
+
+              ),
+
+              new Text("1. Enjuaga el arroz en un tazón con agua varias veces hasta que el agua deje de salir turbia, escurre y ponlo en una olla mediana con dos tazas de agua."),
+              new Text("2. Tapa y cuece a fuego alto hasta que comience a hervir, reduce el fuego al mínimo y cuece 13 minutos. Retira del fuego y enfría,"),
+              new Text("3. En un wok saltea las verduras con los aceites; des- pués de algunos minutos agrega el arroz, el mirin y la salsa de soya; cuando esté caliente salpimienta y sirve. "),
+
+            ],
+
+          ),
         )
 
 
